@@ -8,10 +8,11 @@ body {
 }
 
 canvas {
-  background-color: lightblue;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ1oAEWHfbHa16ubFp5UDw6Z5hCjBa3LkdNdYy2kcRZMITUTzOnXznHiTq&s=10");
+  background-size: cover;
   margin: 20px;
   border-radius: 15px;
-  border: 5px solid rgba(118, 0, 233, 0.375);
+  border: 5px solid rgba(159, 237, 243, 0.375);
 }
 
 img {
