@@ -29,30 +29,32 @@ $(function () {
     
     //toggleGrid();
 
+    //NOTE: IT OFTEN REQUIRES MANY REFRESHES TO LOAD PROPERLY
 
     // TODO 2 - Create Platforms
 
-      createPlatform(400,620,250,180,"rgba(150, 230, 240)");
-      createPlatform(250,500,120,25,"rgba(150, 230, 240)");
-      createPlatform(520,380,80,25,"rgba(150, 230, 240)");
-      createPlatform(700,300,10,100,"rgba(150, 230, 240)");
-      createPlatform(700,300,150,10,"rgba(150, 230, 240)");
-      createPlatform(850,200,10,110,"rgba(150, 230, 240)");
-      createPlatform(850,200,150,10,"rgba(150, 230, 240)");
-      createPlatform(1200,200,40,30,"rgba(150, 230, 240)");
-      createPlatform(800,500,40,30,"rgba(150, 230, 240)");
+      createPlatform(400,620,250,180,"rgba(150, 200, 200)");
+      createPlatform(250,500,120,25,"rgba(150, 200, 200)",100,400);
+      createPlatform(520,375,80,25,"rgba(150, 200, 200)");
+      createPlatform(700,300,150,100,"rgba(150, 200, 200)");
+      createPlatform(850,200,150,200,"rgba(150, 200, 200)");
+      createPlatform(1200,200,40,30,"rgba(150, 200, 200)");
+      createPlatform(800,500,40,30,"rgba(150, 200, 200)");
+      createBadPlatform(600, 390, 100, 10, "red");
+      createBadPlatform(1000, 250, 500, 10, "red");
 
     // TODO 3 - Create Collectables
 
       createCollectable("diamond", 800, 450);
-      createCollectable("diamond", 1200, 150);
-      createCollectable("diamond", 850, 150);
+      createCollectable("max", 1200, 150);
+      createCollectable("grace", 850, 150);
     
     // TODO 4 - Create Cannons
 
       createCannon("bottom", 700, 1000);
       createCannon("top", 675, 1250);
       createCannon("right", 150, 1500);
+      createCannon("left", 0, 2000, 24, 50, 0, 700, 0.5);
     
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
